@@ -1,0 +1,53 @@
+Các lệnh git cơ bản :
+1. git init 
+- Tác dụng: khởi tạo 1 git repository 1 project mới hoặc đã có
+- cách xài : git init trong thư mục gốc của dự án
+2. git clone 
+- tác dung : Copy 1 git repository từ remote source
+- cách xài: git status trong thư mục làm việc.
+3. git status
+- tác dụng: Để check trạng thái của những file bạn đã thay đổi trong thư mục làm việc.
+ VD: Tất cả các thay đổi cuối cùng từ lần commit cuối cùng.
+- cách xài: git status trong thư mục làm việc
+4. git commit
+- tác dụng: commit lại tất  cả  hành động tahy đôir trong thư mục làm việc, và các tập tin
+trước khi đẩy lên git
+- Cách dùng: git commit -m ”Đây là message, bạn dùng để note những thay đổi để sau này dễ dò lại”
+5. git push/git pull
+- push đẩy code lên remote khi bạn đã add và commit các file cần thiết. 
+được sử dụng để kéo (pull) các thay đổi mới nhất từ remote repository vào local repository của bạn.
+ - Cụ thể, khi bạn muốn cập nhật local repository của mình với các thay đổi mới nhất từ remote repository, bạn sử dụng lệnh git pull.
+ Git sẽ tự động tải về các thay đổi mới nhất từ remote repository và cập nhật chúng vào local repository của bạn.
+- cách dùng : git pull <:remote:> <:branch:> and git push <:remote:
+6. git branch
+- liệt ke các nhánh (branch)
+- Cách dùng: git branch hoặc git branch -a\
+7. git checkout
+- Tác dụng: Chuyển sang branch khác
+- Cách dùng: git checkout <: branch:> hoặc ** _ git checkout -b <: branch:> 
+nếu bạn muốn tạo và chuyển sang một chi nhánh mới.
+8. git stash
+- Tác dụng: Lưu thay đổi mà bạn không muốn commit ngay lập tức.
+- Cách dùng: git stash trong thư mục làm việc của bạn.
+9. git merge
+- tác dụng merge hai branch lại với nhau
+- Cách dùng: Chuyển tới branch bạn muốn merge rồi  dùng git merge <:branch_ban_muon_merge:>
+10. git reset
+- xóa một file đã commit không bị ảnh hưởng đến cái file khác
+- Cách dùng: git reset HEAD tên_file
+11. git remote
+- git remote là một lệnh của Git được sử dụng để quản lý các remote repository.
+ Khi bạn làm việc với Git, bạn có thể cần làm việc với nhiều remote repository khác nhau để chia sẻ 
+ code hoặc đồng bộ hóa dữ liệu. Lệnh git remote cho phép bạn xem, thêm, đổi tên, hoặc xoá các remote repository 
+ được liên kết với local repository của bạn.
+
+Dưới đây là một số ví dụ về cách sử dụng git remote:
+
+    git remote: Xem danh sách các remote repository được liên kết với local repository.
+    git remote add <name> <url>: Thêm một remote repository mới và đặt tên cho nó. name là tên bạn muốn đặt cho remote repository và url là đường dẫn tới remote repository đó.
+    git remote rename <old_name> <new_name>: Đổi tên của remote repository từ old_name sang new_name.
+    git remote remove <name>: Xoá remote repository có tên name
+12. git add
+Tác dụng: Để đưa một tập tin vào Staging Area
+
+Cách dùng: git add tên_file hoặc muốn thêm hết file của thư mục thì git add all
