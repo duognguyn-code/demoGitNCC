@@ -28,12 +28,19 @@ trước khi đẩy lên git
 nếu bạn muốn tạo và chuyển sang một chi nhánh mới.
 8. git stash
 - Tác dụng: Lưu thay đổi mà bạn không muốn commit ngay lập tức.
++ Khi sử dụng "git stash pop" Git sẽ áp dụng các thay đổi mới nhất đã được lưu trữ trong bộ nhớ tạm của
+ nó và xóa stash đó ngay sau khi áp dụng
++Khi sử dụng "git stash apply"  Git sẽ áp dụng các thay đổi mới nhất đã được lưu trữ trong bộ nhớ tạm của nó.
 - Cách dùng: git stash trong thư mục làm việc của bạn.
 9. git merge
 - tác dụng merge hai branch lại với nhau
 - Cách dùng: Chuyển tới branch bạn muốn merge rồi  dùng git merge <:branch_ban_muon_merge:>
 10. git reset
-- xóa một file đã commit không bị ảnh hưởng đến cái file khác
+- cho phép bạn di chuyển HEAD (con trỏ đầu của nhánh) đến một commit cụ thể và thay đổi 
+trạng thái hiện tại của kho lưu trữ.
++ git reset --soft dùng để quay lại commit cụ thể và giữu nguyên các file  thay đổi chưa đưojc lưu
++ git reset --hard <commit> di chuyển đến commit cụ thể và xóa các file chưa đưojc commit
+
 - Cách dùng: git reset HEAD tên_file
 11. git remote
 - git remote là một lệnh của Git được sử dụng để quản lý các remote repository.
